@@ -8,20 +8,98 @@
 
 /* Begin PBXBuildFile section */
 		570EC5AE210F8CB60054FB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5AD210F8CB60054FB99 /* AppDelegate.swift */; };
-		570EC5B0210F8CB60054FB99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5AF210F8CB60054FB99 /* ViewController.swift */; };
 		570EC5B3210F8CB60054FB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570EC5B1210F8CB60054FB99 /* Main.storyboard */; };
 		570EC5B5210F8CBA0054FB99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570EC5B4210F8CBA0054FB99 /* Assets.xcassets */; };
 		570EC5B8210F8CBA0054FB99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570EC5B6210F8CBA0054FB99 /* LaunchScreen.storyboard */; };
+		570EC5C6210F8CF90054FB99 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5C0210F8CF90054FB99 /* HomePresenter.swift */; };
+		570EC5C7210F8CF90054FB99 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5C1210F8CF90054FB99 /* HomeWorker.swift */; };
+		570EC5C8210F8CF90054FB99 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5C2210F8CF90054FB99 /* HomeRouter.swift */; };
+		570EC5C9210F8CF90054FB99 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5C3210F8CF90054FB99 /* HomeModels.swift */; };
+		570EC5CA210F8CF90054FB99 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5C4210F8CF90054FB99 /* HomeViewController.swift */; };
+		570EC5CB210F8CF90054FB99 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5C5210F8CF90054FB99 /* HomeInteractor.swift */; };
+		570EC5CF210F8E770054FB99 /* PollutionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5CE210F8E770054FB99 /* PollutionService.swift */; };
+		570EC5D3210F90BA0054FB99 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5D2210F90BA0054FB99 /* City.swift */; };
+		570EC5D6210F913C0054FB99 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5D5210F913C0054FB99 /* Station.swift */; };
+		570EC5D8210F91BE0054FB99 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5D7210F91BE0054FB99 /* Sensor.swift */; };
+		570EC5DA210F92750054FB99 /* SurveyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5D9210F92750054FB99 /* SurveyData.swift */; };
+		570EC5DC210F93D30054FB99 /* QualityIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5DB210F93D30054FB99 /* QualityIndex.swift */; };
+		570EC5DF210F99390054FB99 /* MoyaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EC5DE210F99390054FB99 /* MoyaExtension.swift */; };
+		579C64612111958B00311EC0 /* ParametersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C645F2111958B00311EC0 /* ParametersTableViewCell.swift */; };
+		579C64622111958B00311EC0 /* ParametersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 579C64602111958B00311EC0 /* ParametersTableViewCell.xib */; };
+		579C646A21119C4000311EC0 /* StatisticsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C646421119C4000311EC0 /* StatisticsPresenter.swift */; };
+		579C646B21119C4000311EC0 /* StatisticsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C646521119C4000311EC0 /* StatisticsWorker.swift */; };
+		579C646C21119C4000311EC0 /* StatisticsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C646621119C4000311EC0 /* StatisticsRouter.swift */; };
+		579C646D21119C4000311EC0 /* StatisticsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C646721119C4000311EC0 /* StatisticsModels.swift */; };
+		579C646E21119C4000311EC0 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C646821119C4000311EC0 /* StatisticsViewController.swift */; };
+		579C646F21119C4000311EC0 /* StatisticsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C646921119C4000311EC0 /* StatisticsInteractor.swift */; };
+		57B0BC0F21118E820041F9CE /* ParameterSelectioinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0BC0921118E820041F9CE /* ParameterSelectioinPresenter.swift */; };
+		57B0BC1021118E820041F9CE /* ParameterSelectioinWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0BC0A21118E820041F9CE /* ParameterSelectioinWorker.swift */; };
+		57B0BC1121118E820041F9CE /* ParameterSelectioinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0BC0B21118E820041F9CE /* ParameterSelectioinRouter.swift */; };
+		57B0BC1221118E820041F9CE /* ParameterSelectioinModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0BC0C21118E820041F9CE /* ParameterSelectioinModels.swift */; };
+		57B0BC1321118E820041F9CE /* ParameterSelectioinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0BC0D21118E820041F9CE /* ParameterSelectioinViewController.swift */; };
+		57B0BC1421118E820041F9CE /* ParameterSelectioinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0BC0E21118E820041F9CE /* ParameterSelectioinInteractor.swift */; };
+		57EF9BC22111033500D3209C /* CitySelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF9BC02111033500D3209C /* CitySelectionTableViewCell.swift */; };
+		57EF9BC32111033500D3209C /* CitySelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EF9BC12111033500D3209C /* CitySelectionTableViewCell.xib */; };
+		57EF9BC62111037E00D3209C /* Cellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF9BC52111037E00D3209C /* Cellable.swift */; };
+		57EF9BDA2111258000D3209C /* StationSelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF9BD42111258000D3209C /* StationSelectionPresenter.swift */; };
+		57EF9BDB2111258000D3209C /* StationSelectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF9BD52111258000D3209C /* StationSelectionWorker.swift */; };
+		57EF9BDC2111258000D3209C /* StationSelectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF9BD62111258000D3209C /* StationSelectionRouter.swift */; };
+		57EF9BDD2111258000D3209C /* StationSelectionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF9BD72111258000D3209C /* StationSelectionModels.swift */; };
+		57EF9BDE2111258000D3209C /* StationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF9BD82111258000D3209C /* StationSelectionViewController.swift */; };
+		57EF9BDF2111258000D3209C /* StationSelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF9BD92111258000D3209C /* StationSelectionInteractor.swift */; };
+		57EF9BE721117CA500D3209C /* StationSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF9BE521117CA500D3209C /* StationSelectionTableViewCell.swift */; };
+		57EF9BE821117CA500D3209C /* StationSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EF9BE621117CA500D3209C /* StationSelectionTableViewCell.xib */; };
+		70AA25229A243ED51F9D7BA8 /* Pods_PollutionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA17E313E29541A0BE5C13A /* Pods_PollutionApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0494C8037BFEAE6EFC8F0319 /* Pods-PollutionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PollutionApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PollutionApp/Pods-PollutionApp.release.xcconfig"; sourceTree = "<group>"; };
 		570EC5AA210F8CB60054FB99 /* PollutionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PollutionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		570EC5AD210F8CB60054FB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		570EC5AF210F8CB60054FB99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		570EC5B2210F8CB60054FB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		570EC5B4210F8CBA0054FB99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		570EC5B7210F8CBA0054FB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		570EC5B9210F8CBA0054FB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		570EC5C0210F8CF90054FB99 /* HomePresenter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		570EC5C1210F8CF90054FB99 /* HomeWorker.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		570EC5C2210F8CF90054FB99 /* HomeRouter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		570EC5C3210F8CF90054FB99 /* HomeModels.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		570EC5C4210F8CF90054FB99 /* HomeViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		570EC5C5210F8CF90054FB99 /* HomeInteractor.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		570EC5CE210F8E770054FB99 /* PollutionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionService.swift; sourceTree = "<group>"; };
+		570EC5D2210F90BA0054FB99 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		570EC5D5210F913C0054FB99 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		570EC5D7210F91BE0054FB99 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		570EC5D9210F92750054FB99 /* SurveyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyData.swift; sourceTree = "<group>"; };
+		570EC5DB210F93D30054FB99 /* QualityIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityIndex.swift; sourceTree = "<group>"; };
+		570EC5DE210F99390054FB99 /* MoyaExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaExtension.swift; sourceTree = "<group>"; };
+		579C645F2111958B00311EC0 /* ParametersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersTableViewCell.swift; sourceTree = "<group>"; };
+		579C64602111958B00311EC0 /* ParametersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParametersTableViewCell.xib; sourceTree = "<group>"; };
+		579C646421119C4000311EC0 /* StatisticsPresenter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StatisticsPresenter.swift; sourceTree = "<group>"; tabWidth = 2; };
+		579C646521119C4000311EC0 /* StatisticsWorker.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StatisticsWorker.swift; sourceTree = "<group>"; tabWidth = 2; };
+		579C646621119C4000311EC0 /* StatisticsRouter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StatisticsRouter.swift; sourceTree = "<group>"; tabWidth = 2; };
+		579C646721119C4000311EC0 /* StatisticsModels.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StatisticsModels.swift; sourceTree = "<group>"; tabWidth = 2; };
+		579C646821119C4000311EC0 /* StatisticsViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		579C646921119C4000311EC0 /* StatisticsInteractor.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StatisticsInteractor.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57B0BC0921118E820041F9CE /* ParameterSelectioinPresenter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ParameterSelectioinPresenter.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57B0BC0A21118E820041F9CE /* ParameterSelectioinWorker.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ParameterSelectioinWorker.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57B0BC0B21118E820041F9CE /* ParameterSelectioinRouter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ParameterSelectioinRouter.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57B0BC0C21118E820041F9CE /* ParameterSelectioinModels.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ParameterSelectioinModels.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57B0BC0D21118E820041F9CE /* ParameterSelectioinViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ParameterSelectioinViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57B0BC0E21118E820041F9CE /* ParameterSelectioinInteractor.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ParameterSelectioinInteractor.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57EF9BC02111033500D3209C /* CitySelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionTableViewCell.swift; sourceTree = "<group>"; };
+		57EF9BC12111033500D3209C /* CitySelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitySelectionTableViewCell.xib; sourceTree = "<group>"; };
+		57EF9BC52111037E00D3209C /* Cellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cellable.swift; sourceTree = "<group>"; };
+		57EF9BD42111258000D3209C /* StationSelectionPresenter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StationSelectionPresenter.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57EF9BD52111258000D3209C /* StationSelectionWorker.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StationSelectionWorker.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57EF9BD62111258000D3209C /* StationSelectionRouter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StationSelectionRouter.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57EF9BD72111258000D3209C /* StationSelectionModels.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StationSelectionModels.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57EF9BD82111258000D3209C /* StationSelectionViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StationSelectionViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57EF9BD92111258000D3209C /* StationSelectionInteractor.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StationSelectionInteractor.swift; sourceTree = "<group>"; tabWidth = 2; };
+		57EF9BE521117CA500D3209C /* StationSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		57EF9BE621117CA500D3209C /* StationSelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationSelectionTableViewCell.xib; sourceTree = "<group>"; };
+		7FA17E313E29541A0BE5C13A /* Pods_PollutionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PollutionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9C6A3A38193526196E286F /* Pods-PollutionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PollutionApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PollutionApp/Pods-PollutionApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AA25229A243ED51F9D7BA8 /* Pods_PollutionApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +119,8 @@
 			children = (
 				570EC5AC210F8CB60054FB99 /* PollutionApp */,
 				570EC5AB210F8CB60054FB99 /* Products */,
+				5E43DE980774DCA6BEB8FF36 /* Pods */,
+				CB5AEA8F9C0D5E046CFC1A15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +135,164 @@
 		570EC5AC210F8CB60054FB99 /* PollutionApp */ = {
 			isa = PBXGroup;
 			children = (
+				570EC5CC210F8E160054FB99 /* Common */,
+				570EC5D0210F8EC00054FB99 /* Home */,
+				57EF9BC721111C5E00D3209C /* StationSelection */,
+				57B0BC0821118E650041F9CE /* ParameterSelection */,
+				579C646321119C1E00311EC0 /* Satatistic */,
 				570EC5AD210F8CB60054FB99 /* AppDelegate.swift */,
-				570EC5AF210F8CB60054FB99 /* ViewController.swift */,
 				570EC5B1210F8CB60054FB99 /* Main.storyboard */,
 				570EC5B4210F8CBA0054FB99 /* Assets.xcassets */,
 				570EC5B6210F8CBA0054FB99 /* LaunchScreen.storyboard */,
 				570EC5B9210F8CBA0054FB99 /* Info.plist */,
 			);
 			path = PollutionApp;
+			sourceTree = "<group>";
+		};
+		570EC5CC210F8E160054FB99 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				57EF9BC42111036200D3209C /* Protocols */,
+				570EC5DD210F99270054FB99 /* Extensions */,
+				570EC5D1210F90AB0054FB99 /* Models */,
+				570EC5CD210F8E1C0054FB99 /* NetworkLayer */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		570EC5CD210F8E1C0054FB99 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				570EC5CE210F8E770054FB99 /* PollutionService.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		570EC5D0210F8EC00054FB99 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				57EF9BBF2111031000D3209C /* Cells */,
+				570EC5C0210F8CF90054FB99 /* HomePresenter.swift */,
+				570EC5C1210F8CF90054FB99 /* HomeWorker.swift */,
+				570EC5C2210F8CF90054FB99 /* HomeRouter.swift */,
+				570EC5C3210F8CF90054FB99 /* HomeModels.swift */,
+				570EC5C4210F8CF90054FB99 /* HomeViewController.swift */,
+				570EC5C5210F8CF90054FB99 /* HomeInteractor.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		570EC5D1210F90AB0054FB99 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				570EC5D2210F90BA0054FB99 /* City.swift */,
+				570EC5D5210F913C0054FB99 /* Station.swift */,
+				570EC5D7210F91BE0054FB99 /* Sensor.swift */,
+				570EC5D9210F92750054FB99 /* SurveyData.swift */,
+				570EC5DB210F93D30054FB99 /* QualityIndex.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		570EC5DD210F99270054FB99 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				570EC5DE210F99390054FB99 /* MoyaExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		579C645D2111957200311EC0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				579C645F2111958B00311EC0 /* ParametersTableViewCell.swift */,
+				579C64602111958B00311EC0 /* ParametersTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		579C646321119C1E00311EC0 /* Satatistic */ = {
+			isa = PBXGroup;
+			children = (
+				579C646421119C4000311EC0 /* StatisticsPresenter.swift */,
+				579C646521119C4000311EC0 /* StatisticsWorker.swift */,
+				579C646621119C4000311EC0 /* StatisticsRouter.swift */,
+				579C646721119C4000311EC0 /* StatisticsModels.swift */,
+				579C646821119C4000311EC0 /* StatisticsViewController.swift */,
+				579C646921119C4000311EC0 /* StatisticsInteractor.swift */,
+			);
+			path = Satatistic;
+			sourceTree = "<group>";
+		};
+		57B0BC0821118E650041F9CE /* ParameterSelection */ = {
+			isa = PBXGroup;
+			children = (
+				579C645D2111957200311EC0 /* Cells */,
+				57B0BC0921118E820041F9CE /* ParameterSelectioinPresenter.swift */,
+				57B0BC0A21118E820041F9CE /* ParameterSelectioinWorker.swift */,
+				57B0BC0B21118E820041F9CE /* ParameterSelectioinRouter.swift */,
+				57B0BC0C21118E820041F9CE /* ParameterSelectioinModels.swift */,
+				57B0BC0D21118E820041F9CE /* ParameterSelectioinViewController.swift */,
+				57B0BC0E21118E820041F9CE /* ParameterSelectioinInteractor.swift */,
+			);
+			path = ParameterSelection;
+			sourceTree = "<group>";
+		};
+		57EF9BBF2111031000D3209C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				57EF9BC02111033500D3209C /* CitySelectionTableViewCell.swift */,
+				57EF9BC12111033500D3209C /* CitySelectionTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		57EF9BC42111036200D3209C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				57EF9BC52111037E00D3209C /* Cellable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		57EF9BC721111C5E00D3209C /* StationSelection */ = {
+			isa = PBXGroup;
+			children = (
+				57EF9BE02111361700D3209C /* Cells */,
+				57EF9BD42111258000D3209C /* StationSelectionPresenter.swift */,
+				57EF9BD52111258000D3209C /* StationSelectionWorker.swift */,
+				57EF9BD62111258000D3209C /* StationSelectionRouter.swift */,
+				57EF9BD72111258000D3209C /* StationSelectionModels.swift */,
+				57EF9BD82111258000D3209C /* StationSelectionViewController.swift */,
+				57EF9BD92111258000D3209C /* StationSelectionInteractor.swift */,
+			);
+			path = StationSelection;
+			sourceTree = "<group>";
+		};
+		57EF9BE02111361700D3209C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				57EF9BE521117CA500D3209C /* StationSelectionTableViewCell.swift */,
+				57EF9BE621117CA500D3209C /* StationSelectionTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5E43DE980774DCA6BEB8FF36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF9C6A3A38193526196E286F /* Pods-PollutionApp.debug.xcconfig */,
+				0494C8037BFEAE6EFC8F0319 /* Pods-PollutionApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB5AEA8F9C0D5E046CFC1A15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FA17E313E29541A0BE5C13A /* Pods_PollutionApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +302,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 570EC5BC210F8CBA0054FB99 /* Build configuration list for PBXNativeTarget "PollutionApp" */;
 			buildPhases = (
+				AB14932ED699D6F313EC95A4 /* [CP] Check Pods Manifest.lock */,
 				570EC5A6210F8CB60054FB99 /* Sources */,
 				570EC5A7210F8CB60054FB99 /* Frameworks */,
 				570EC5A8210F8CB60054FB99 /* Resources */,
+				D2472555F805EAFCC1EB6F0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,20 +356,102 @@
 			buildActionMask = 2147483647;
 			files = (
 				570EC5B8210F8CBA0054FB99 /* LaunchScreen.storyboard in Resources */,
+				57EF9BC32111033500D3209C /* CitySelectionTableViewCell.xib in Resources */,
 				570EC5B5210F8CBA0054FB99 /* Assets.xcassets in Resources */,
+				579C64622111958B00311EC0 /* ParametersTableViewCell.xib in Resources */,
 				570EC5B3210F8CB60054FB99 /* Main.storyboard in Resources */,
+				57EF9BE821117CA500D3209C /* StationSelectionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB14932ED699D6F313EC95A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PollutionApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2472555F805EAFCC1EB6F0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PollutionApp/Pods-PollutionApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PollutionApp/Pods-PollutionApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		570EC5A6210F8CB60054FB99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570EC5B0210F8CB60054FB99 /* ViewController.swift in Sources */,
+				570EC5CF210F8E770054FB99 /* PollutionService.swift in Sources */,
+				57B0BC1421118E820041F9CE /* ParameterSelectioinInteractor.swift in Sources */,
 				570EC5AE210F8CB60054FB99 /* AppDelegate.swift in Sources */,
+				570EC5D8210F91BE0054FB99 /* Sensor.swift in Sources */,
+				579C646A21119C4000311EC0 /* StatisticsPresenter.swift in Sources */,
+				570EC5D3210F90BA0054FB99 /* City.swift in Sources */,
+				579C646E21119C4000311EC0 /* StatisticsViewController.swift in Sources */,
+				570EC5C9210F8CF90054FB99 /* HomeModels.swift in Sources */,
+				57EF9BC62111037E00D3209C /* Cellable.swift in Sources */,
+				579C64612111958B00311EC0 /* ParametersTableViewCell.swift in Sources */,
+				57EF9BDF2111258000D3209C /* StationSelectionInteractor.swift in Sources */,
+				57B0BC1221118E820041F9CE /* ParameterSelectioinModels.swift in Sources */,
+				57EF9BE721117CA500D3209C /* StationSelectionTableViewCell.swift in Sources */,
+				57EF9BDA2111258000D3209C /* StationSelectionPresenter.swift in Sources */,
+				57B0BC0F21118E820041F9CE /* ParameterSelectioinPresenter.swift in Sources */,
+				570EC5DC210F93D30054FB99 /* QualityIndex.swift in Sources */,
+				570EC5C8210F8CF90054FB99 /* HomeRouter.swift in Sources */,
+				57EF9BC22111033500D3209C /* CitySelectionTableViewCell.swift in Sources */,
+				570EC5C7210F8CF90054FB99 /* HomeWorker.swift in Sources */,
+				57EF9BDD2111258000D3209C /* StationSelectionModels.swift in Sources */,
+				570EC5D6210F913C0054FB99 /* Station.swift in Sources */,
+				570EC5C6210F8CF90054FB99 /* HomePresenter.swift in Sources */,
+				57EF9BDB2111258000D3209C /* StationSelectionWorker.swift in Sources */,
+				579C646F21119C4000311EC0 /* StatisticsInteractor.swift in Sources */,
+				579C646B21119C4000311EC0 /* StatisticsWorker.swift in Sources */,
+				570EC5DF210F99390054FB99 /* MoyaExtension.swift in Sources */,
+				570EC5CA210F8CF90054FB99 /* HomeViewController.swift in Sources */,
+				57EF9BDE2111258000D3209C /* StationSelectionViewController.swift in Sources */,
+				570EC5CB210F8CF90054FB99 /* HomeInteractor.swift in Sources */,
+				57EF9BDC2111258000D3209C /* StationSelectionRouter.swift in Sources */,
+				579C646D21119C4000311EC0 /* StatisticsModels.swift in Sources */,
+				579C646C21119C4000311EC0 /* StatisticsRouter.swift in Sources */,
+				57B0BC1121118E820041F9CE /* ParameterSelectioinRouter.swift in Sources */,
+				57B0BC1321118E820041F9CE /* ParameterSelectioinViewController.swift in Sources */,
+				57B0BC1021118E820041F9CE /* ParameterSelectioinWorker.swift in Sources */,
+				570EC5DA210F92750054FB99 /* SurveyData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +593,7 @@
 		};
 		570EC5BD210F8CBA0054FB99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9C6A3A38193526196E286F /* Pods-PollutionApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +612,7 @@
 		};
 		570EC5BE210F8CBA0054FB99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0494C8037BFEAE6EFC8F0319 /* Pods-PollutionApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
